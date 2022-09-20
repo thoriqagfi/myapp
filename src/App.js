@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+// import { Component } from 'react';
+// import HelloComponent from './components/HelloComponent';
 
-function App() {
+// Stateless Component
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -11,7 +14,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href='/HelloComponent'
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -21,5 +24,14 @@ function App() {
     </div>
   );
 }
+
+// StateFullComponent
+// class StateFullComponent extends Component {
+//   render() {
+//     return (
+//       <div>StateFullComponent</div>
+//     )
+//   }
+// }
 
 export default App;
