@@ -68,7 +68,9 @@ const LearnReactHooks = () => {
       <ul>
         {
           items.map(item => (
-            <li key={item.id}>{item.value}</li> 
+            <li key={item.id}>
+              {item.id}. {item.value}
+            </li> 
           ))
         }
       </ul>

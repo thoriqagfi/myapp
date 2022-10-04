@@ -6,9 +6,9 @@ export default function LearnUseCallback() {
   const [showData, setShowData] = useState(false);
 
   // Hanya berubah ketika counter berubah
-  const getCounterData = useCallback( () => {
-      return [counter*2, counter*3, counter*4];
-    }, [counter])
+  // const getCounterData = useCallback( () => {
+  //     return [counter*2, counter*3, counter*4];
+  //   }, [counter])
 
   const getRandomData = useCallback(() => {
     const random = Math.floor(Math.random() *100) + 1;

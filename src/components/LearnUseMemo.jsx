@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 
 const HeavyFunction = (counter) => {
   for(let i = 0; i < 2000000000; i++) {}
-  return counter * 3
+  return counter * 3;
 }
 
 export default function LearnUseMemo() {
@@ -32,7 +32,7 @@ export default function LearnUseMemo() {
           </button>
         </div>
 
-        <h2 style={{color}} className='font-bold py-2 mb-2 text-xl w-2/5 bg-gray-300 rounded-lg'>Theme Color: {cacheColor.theme}</h2>
+        <h2 style={{color}} className='font-bold py-2 mb-2 text-xl w-2/5 bg-gray-100 rounded-lg'>Theme Color: {cacheColor.theme}</h2>
         <div >
           <button className='my-1 py-1 px-3 bg-lime-500 rounded-full border-2 hover:border-lime-800 mx-2' onClick={() => setColor('green')}>Green</button>
           <button className='my-1 py-1 px-3 bg-lime-500 rounded-full border-2 hover:border-lime-800 mx-2' onClick={() => setColor('red')}>Red</button>
