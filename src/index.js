@@ -5,7 +5,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import HelloComponent from './components/HelloComponent';
 // import useState1 from './components/LearnReactHooks';
-import Home from './container/Home';
+import Home from './pages/Home';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

@@ -7,6 +7,7 @@ import LearnUseRef from "../components/LearnUseRef";
 import LearnUseCallback from "../components/LearnUseCallback";
 import LearnUseMemo from "../components/LearnUseMemo";
 import LearnUseContext from "../components/LearnUseContext";
+import ThemeProvider from "../context/theme";
 // import LearnEffectReact from "../components/LearnEffectReact";
 
 export const UserContext = createContext({
@@ -16,23 +17,19 @@ export const UserContext = createContext({
   
 });
 
-export const ThemeContext = createContext({
-  theme: 'dark',
-  primary: 'white',
-  id: '123wefdsf4',
-})
-
 export default function Home() {
   return (
     <>
-      <LearnReactHooks/>
-      <LearnReactEffect/>
-      <LearnUseRef/>
-      <LearnUseCallback/>
-      <LearnUseMemo/>
-      <LearnUseContext/>
-      {/* <HelloComponent/> */}
-      {/* <LearnEffectReact/> */}
+      <ThemeProvider>
+        <LearnReactHooks/>
+        <LearnReactEffect/>
+        <LearnUseRef/>
+        <LearnUseCallback/>
+        <LearnUseMemo/>
+        <LearnUseContext/>
+        {/* <HelloComponent/> */}
+        {/* <LearnEffectReact/> */}
+      </ThemeProvider>
     </>
   )
 }
