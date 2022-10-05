@@ -8,6 +8,8 @@ import LearnUseCallback from "../components/LearnUseCallback";
 import LearnUseMemo from "../components/LearnUseMemo";
 import LearnUseContext from "../components/LearnUseContext";
 import ThemeProvider from "../context/theme";
+// import Login from "./Login";
+import LoginReducer from "./LoginReducer";
 // import LearnEffectReact from "../components/LearnEffectReact";
 
 export const UserContext = createContext({
@@ -27,6 +29,8 @@ export default function Home() {
         <LearnUseCallback/>
         <LearnUseMemo/>
         <LearnUseContext/>
+        {/* <Login/> */}
+        <LoginReducer/>
         {/* <HelloComponent/> */}
         {/* <LearnEffectReact/> */}
       </ThemeProvider>
