@@ -2,10 +2,10 @@ import {createContext, useContext, useState} from 'react';
 import { useEffect } from 'react';
 
 export const ThemeContext = createContext();
-
 export const useTheme = () => {
   return useContext(ThemeContext);
 }
+
 
 export const ThemeProvider = ({children}) => {
   const [theme, setTheme] = useState('light');

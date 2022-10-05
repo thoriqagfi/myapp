@@ -11,7 +11,7 @@ export default function LearnUseContext() {
   const { theme, setDarkTheme, setLightTheme } = themeContext;
 
   return (
-    <div className="text-center bg-pink-400">
+    <div className={`text-center ${theme === `dark` ? `bg-gray-800 text-white` : `bg-slate-200`}`}>
       <h1 className="text-3xl font-bold py-4">Learn Use Context</h1>
       <TopBar/>
       {/* Menggunakan useContext */}
